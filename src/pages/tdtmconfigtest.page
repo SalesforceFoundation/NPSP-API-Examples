@@ -1,6 +1,15 @@
-<apex:page >
-<!-- Begin Default Content REMOVE THIS -->
-<h1>Congratulations</h1>
-This is your new Page
-<!-- End Default Content REMOVE THIS -->
+<apex:page controller="TDTM_Config_API_Test">
+<h1>TDTM Default Config</h1>
+
+    <apex:dataList value="{!tdtmConfig}" var="val">
+        {!val.npsp__Class__c} - Active: {!val.npsp__Active__c}
+    </apex:dataList>
+    
+    <hr/>
+    
+    <apex:form >
+        <apex:commandButton action="{!MakeAllActive}" value="Make All Active" />
+        <apex:commandButton action="{!MakeAllInactive}" value="Make All Inactive" />
+    </apex:form>
+        
 </apex:page>

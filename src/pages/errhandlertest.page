@@ -1,6 +1,17 @@
 <apex:page controller="ERR_Handler_API_Test">
-<!-- Begin Default Content REMOVE THIS -->
-<h1>Congratulations</h1>
-This is your new Page
-<!-- End Default Content REMOVE THIS -->
+    
+    <h1>Error Context Values</h1>
+
+    <apex:dataList value="{!errValues}" var="val">
+        {!val}
+    </apex:dataList>
+
+    <hr/>
+    
+    <apex:form >
+        <apex:commandButton action="{!processCustomError}" value="Process Custom Error" />
+    </apex:form>
+    
+    <p>After clicking the button, an error record should appear under NPSP Settings > System Tools > Error Log. You should also receive an error notification email or see a Chatter post, if enabled.</p>
+    
 </apex:page>
