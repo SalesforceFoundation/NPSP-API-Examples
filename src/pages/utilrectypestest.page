@@ -1,6 +1,15 @@
-<apex:page >
-<!-- Begin Default Content REMOVE THIS -->
-<h1>Congratulations</h1>
-This is your new Page
-<!-- End Default Content REMOVE THIS -->
+<apex:page controller="UTIL_RecordTypes_API_Test">
+
+    <h1>Account Record Types Names</h1>
+
+    <apex:dataList value="{!accountRecTypesNames}" var="val">
+        {!val}
+    </apex:dataList>
+    
+    <h1>Account Record Types Ids</h1>
+    
+    <apex:dataList value="{!accountRecTypesIds}" var="val">
+        {!val}
+    </apex:dataList>
+    
 </apex:page>

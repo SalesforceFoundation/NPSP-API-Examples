@@ -1,14 +1,16 @@
 public with sharing class UTIL_CustomSettings_API_Test {
 
-    /** @description Property to populate with the value of one field for each NPSP setting. **/
+    /** @description Properties to populate with the value of one field for each NPSP setting. **/
     public Map<String, Boolean> sampleBoolSettings { public get; public set; }
     public Map<String, Integer> sampleIntSettings { public get; public set; }
     
+    /** @description Constructors that initializes properties. **/
     public UTIL_CustomSettings_API_Test() {
         sampleBoolSettings = new Map<String, Boolean>();
         sampleIntSettings = new Map<String, Integer>();
     }
     
+    /** @description Populates properties with contents of Custom Settings. **/
     public void populateMap() {
     	sampleBoolSettings.put('npe01__Payments_Enabled__c', npsp.UTIL_CustomSettings_API.getContactsSettings().npe01__Payments_Enabled__c);
     	sampleBoolSettings.put('npo02__Always_Rollup_to_Primary_Contact__c', npsp.UTIL_CustomSettings_API.getHouseholdsSettings().npo02__Always_Rollup_to_Primary_Contact__c);
@@ -21,6 +23,7 @@ public with sharing class UTIL_CustomSettings_API_Test {
     	sampleBoolSettings.put('npsp__Default_Allocations_Enabled__c', npsp.UTIL_CustomSettings_API.getAllocationsSettings().npsp__Default_Allocations_Enabled__c);
     }
     
+    /** @description Sets sample settings to true (and the one that is an int to 10). **/
     public PageReference populateSampleSettings() {
     	List<SObject> settings = new List<SObject>();
     	
@@ -65,6 +68,7 @@ public with sharing class UTIL_CustomSettings_API_Test {
         return null;
     }
     
+    /** @description Sets sample settings to false (and the one that is an int to 0). **/
     public PageReference clearSampleSettings() { 
     	List<SObject> settings = new List<SObject>();
     	

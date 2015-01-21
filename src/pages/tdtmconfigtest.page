@@ -3,7 +3,7 @@
     <h1>TDTM Default Config</h1>
 
     <apex:dataList value="{!tdtmConfig}" var="val">
-        {!val.npsp__Class__c} - <b>Active</b>: {!val.npsp__Active__c}
+        {!val.npsp__Class__c} : <b>{!val.npsp__Active__c}</b>
     </apex:dataList>
     
     <hr/>
