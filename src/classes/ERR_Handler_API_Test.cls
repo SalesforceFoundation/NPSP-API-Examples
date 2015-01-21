@@ -1,20 +1,23 @@
 public with sharing class ERR_Handler_API_Test {
 	
+	/** @description Property to populate with the NPSP error context values. **/
 	public List<npsp.ERR_Handler_API.Context> errValues { public get; set; }
 	
+	/** @description Custom exception to process. **/
 	class CustomException extends Exception {}
 	
+	/** @description Constructor that populates the context values property. **/
 	public ERR_Handler_API_Test() {
-		String s = npsp.ERR_Handler_API.Context.TDTM.name();
 		errValues = npsp.ERR_Handler_API.Context.values();
 	}
 	
-	/* Due to what seems to be a platform bug, a global enum in a global class is not accessible outside the package.
+	/** @description Action method that processes a custom exception and passes the name to a standard NPSP error context. **/
 	public PageReference processError() {
         npsp.ERR_Handler_API.processError(new CustomException('Testing'), npsp.ERR_Handler_API.Context.TDTM.name());
         return null;
-	}*/
-
+	}
+	
+    /** @description Action method that processes a custom exception and passes a custom context. **/
     public PageReference processCustomError() {
         npsp.ERR_Handler_API.processError(new CustomException('Testing'), 'MyContext');
         return null;

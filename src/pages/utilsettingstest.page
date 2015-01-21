@@ -1,6 +1,16 @@
-<apex:page >
-<!-- Begin Default Content REMOVE THIS -->
-<h1>Congratulations</h1>
-This is your new Page
-<!-- End Default Content REMOVE THIS -->
+<apex:page controller="UTIL_CustomSettings_API_Test" action="{!populateMap}">
+<h1>TDTM Custom Settings</h1>
+
+    <apex:dataList value="{!sampleBoolSettings}" var="key">
+        {!key} : <b>{!sampleBoolSettings[key]}</b>
+    </apex:dataList>
+    <apex:dataList value="{!sampleIntSettings}" var="key">
+        {!key} : <b>{!sampleIntSettings[key]}</b>
+    </apex:dataList>
+    
+    <apex:form>
+        <apex:commandButton action="{!populateSampleSettings}" value="Populate Sample Settings" />
+        <apex:commandButton action="{!clearSampleSettings}" value="Clear Sample Settings" />
+    </apex:form>
+        
 </apex:page>

@@ -1,12 +1,15 @@
 public with sharing class TDTM_Config_API_Test {
 
+    /** @description Property to populate with the NPSP Trigger Handler default records. **/
     public List<npsp__Trigger_Handler__c> tdtmConfig { public get; public set; }
-        
+    
+    /** @description Constructor that populates the NPSP Trigger Handler records property. **/
     public TDTM_Config_API_Test() {
     	tdtmConfig = npsp.TDTM_Config_API.getDefaultRecords();
     }
     
-    public PageReference MakeAllActive() {
+    /** @description Action method that makes all NPSP Trigger Handlers active. **/
+    public PageReference makeAllActive() {
     	for(npsp__Trigger_Handler__c handler : tdtmConfig) {
     		handler.npsp__Active__c = true;
     	}
@@ -14,7 +17,8 @@ public with sharing class TDTM_Config_API_Test {
     	return null;
     }
     
-    public PageReference MakeAllInactive() {
+    /** @description Action method that makes all NPSP Trigger Handlers inactive. **/
+    public PageReference makeAllInactive() {
         for(npsp__Trigger_Handler__c handler : tdtmConfig) {
             handler.npsp__Active__c = false;
         }

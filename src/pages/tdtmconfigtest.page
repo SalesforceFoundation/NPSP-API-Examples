@@ -1,15 +1,16 @@
 <apex:page controller="TDTM_Config_API_Test">
-<h1>TDTM Default Config</h1>
+
+    <h1>TDTM Default Config</h1>
 
     <apex:dataList value="{!tdtmConfig}" var="val">
-        {!val.npsp__Class__c} - Active: {!val.npsp__Active__c}
+        {!val.npsp__Class__c} - <b>Active</b>: {!val.npsp__Active__c}
     </apex:dataList>
     
     <hr/>
     
     <apex:form >
-        <apex:commandButton action="{!MakeAllActive}" value="Make All Active" />
-        <apex:commandButton action="{!MakeAllInactive}" value="Make All Inactive" />
+        <apex:commandButton action="{!makeAllActive}" value="Make All Active" />
+        <apex:commandButton action="{!makeAllInactive}" value="Make All Inactive" />
     </apex:form>
         
 </apex:page>

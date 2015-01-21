@@ -9,9 +9,10 @@
     <hr/>
     
     <apex:form >
+        <apex:commandButton action="{!processError}" value="Process Error" />
         <apex:commandButton action="{!processCustomError}" value="Process Custom Error" />
     </apex:form>
     
-    <p>After clicking the button, an error record should appear under NPSP Settings > System Tools > Error Log. You should also receive an error notification email or see a Chatter post, if enabled.</p>
+    <p>After clicking either button, an error record should appear under NPSP Settings > System Tools > Error Log. You should also receive an error notification email or see a Chatter post, if enabled.</p>
     
 </apex:page>
