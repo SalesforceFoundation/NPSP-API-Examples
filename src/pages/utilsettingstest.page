@@ -8,7 +8,7 @@
         {!key} : <b>{!sampleIntSettings[key]}</b>
     </apex:dataList>
     
-    <apex:form>
+    <apex:form >
         <apex:commandButton action="{!populateSampleSettings}" value="Populate Sample Settings" />
         <apex:commandButton action="{!clearSampleSettings}" value="Clear Sample Settings" />
     </apex:form>

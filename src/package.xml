@@ -14,5 +14,13 @@
         <members>utilsettingstest</members>
         <name>ApexPage</name>
     </types>
+    <types>
+        <members>NPSP_API_Examples</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomTab</name>
+    </types>
     <version>31.0</version>
 </Package>

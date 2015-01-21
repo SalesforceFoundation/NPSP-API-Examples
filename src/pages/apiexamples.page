@@ -1,0 +1,10 @@
+<apex:page >
+
+    <h1>NPSP API Examples</h1>
+    
+    <p><a href="/apex/errhandlertest">Error Handler API Example</a></p>
+    <p><a href="/apex/tdtmconfigtest">TDTM Configuration API Example</a></p>
+    <p><a href="/apex/utilrectypestest">Record Types Utility API Example</a></p>
+    <p><a href="/apex/utilsettingstest">Custom Settings Configuration API Example</a></p>
+
+</apex:page>
