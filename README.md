@@ -8,4 +8,4 @@ To deploy the unmanaged code to your org, you just need to have Ant and the Sale
 
     ant deployWithoutTest
 
-Once the code is deployed, you may have to give the necessary profiles access to the NPSP Examples APP. Then switch to the app, and you will see in the API Examples tab links to navigate to the other 4 tabs. These tabs display examples of how the NPSP API is being used. Look at the controllers being the pages for details.
+Once the code is deployed, you may have to give the necessary profiles access to the NPSP Examples APP. Then switch to the app, and you will see in the API Examples tab links to navigate to the other 4 tabs. These tabs display examples of how the NPSP API is being used. Look at the controllers behind the pages for details.
