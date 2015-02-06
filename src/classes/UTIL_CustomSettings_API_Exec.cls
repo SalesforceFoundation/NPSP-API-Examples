@@ -63,7 +63,11 @@ public with sharing class UTIL_CustomSettings_API_Exec {
         allocationSettings.npsp__Default_Allocations_Enabled__c = true;
         settings.add(allocationSettings);
 
-        update settings;
+        if(contactSettings.Id != null) {
+            update settings;
+        } else {
+        	insert settings;
+        }
         populateMap();
         return null;
     }
