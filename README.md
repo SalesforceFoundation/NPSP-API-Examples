@@ -12,4 +12,6 @@ Once the code is deployed, you may have to give the necessary profiles access to
 
 Clink this link to install the unmanaged version: [https://login.salesforce.com/packaging/installPackage.apexp?p0=04ti0000000gPbd](https://login.salesforce.com/packaging/installPackage.apexp?p0=04ti0000000gPbd)
 
-Click this link to install the managed version: [https://login.salesforce.com/packaging/installPackage.apexp?p0=04ti0000000gQ2q](https://login.salesforce.com/packaging/installPackage.apexp?p0=04ti0000000gQ2q)
+Click this link to install the managed beta version: [https://login.salesforce.com/packaging/installPackage.apexp?p0=04ti0000000gQ2q](https://login.salesforce.com/packaging/installPackage.apexp?p0=04ti0000000gQ2q)
+
+Click this link to install the managed production version: [https://login.salesforce.com/packaging/installPackage.apexp?p0=04ti0000000gQ30](https://login.salesforce.com/packaging/installPackage.apexp?p0=04ti0000000gQ30)
