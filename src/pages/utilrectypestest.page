@@ -1,4 +1,4 @@
-<apex:page controller="UTIL_RecordTypes_API_Test">
+<apex:page controller="UTIL_RecordTypes_API_Exec">
 
     <h1>Account Record Types Names</h1>
 

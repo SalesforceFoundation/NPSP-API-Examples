@@ -1,4 +1,4 @@
-<apex:page controller="TDTM_Config_API_Test">
+<apex:page controller="TDTM_Config_API_Exec">
 
     <h1>TDTM Default Config</h1>
 

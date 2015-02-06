@@ -1,4 +1,4 @@
-<apex:page controller="UTIL_CustomSettings_API_Test" action="{!populateMap}">
+<apex:page controller="UTIL_CustomSettings_API_Exec" action="{!populateMap}">
 <h1>TDTM Custom Settings</h1>
 
     <apex:dataList value="{!sampleBoolSettings}" var="key">

@@ -1,4 +1,4 @@
-public with sharing class UTIL_RecordTypes_API_Test {
+public with sharing class UTIL_RecordTypes_API_Exec {
 
     /** @description Property to populate with the name of the existing Account Record Types. **/
     public Set<String> accountRecTypesNames { public get; public set; }
@@ -6,9 +6,9 @@ public with sharing class UTIL_RecordTypes_API_Test {
     public Set<Id> accountRecTypesIds { public get; public set; }
     
     /** @description Constructor that initializes and populates the properties. **/
-    public UTIL_RecordTypes_API_Test() {
-    	accountRecTypesNames = new Set<String>();
-    	accountRecTypesIds = new Set<Id>();
+    public UTIL_RecordTypes_API_Exec() {
+        accountRecTypesNames = new Set<String>();
+        accountRecTypesIds = new Set<Id>();
     
         Id organizationId = npsp.UTIL_RecordTypes_API.GetRecordTypeId('Account', 'Organization');
         Id householdAccId = npsp.UTIL_RecordTypes_API.GetRecordTypeId('Account', 'Household Account');
