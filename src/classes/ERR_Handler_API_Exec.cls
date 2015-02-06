@@ -12,13 +12,13 @@ public with sharing class ERR_Handler_API_Exec {
     }
     
     /** @description Action method that processes a custom exception and passes the name to a standard NPSP error context. **/
-    public PageReference ProcessError() {
+    public PageReference processError() {
         npsp.ERR_Handler_API.processError(new CustomException('Testing'), npsp.ERR_Handler_API.Context.TDTM.name());
         return null;
     }
     
     /** @description Action method that processes a custom exception and passes a custom context. **/
-    public PageReference ProcessCustomError() {
+    public PageReference processCustomError() {
         npsp.ERR_Handler_API.processError(new CustomException('Testing'), 'MyContext');
         return null;
     }

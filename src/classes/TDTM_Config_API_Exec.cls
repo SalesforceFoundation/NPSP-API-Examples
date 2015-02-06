@@ -9,7 +9,7 @@ public with sharing class TDTM_Config_API_Exec {
     }
     
     /** @description Action method that makes all NPSP Trigger Handlers active. **/
-    public PageReference MakeAllActive() {
+    public PageReference makeAllActive() {
         for(npsp__Trigger_Handler__c handler : tdtmConfig) {
             handler.npsp__Active__c = true;
         }
@@ -18,7 +18,7 @@ public with sharing class TDTM_Config_API_Exec {
     }
     
     /** @description Action method that makes all NPSP Trigger Handlers inactive. **/
-    public PageReference MakeAllInactive() {
+    public PageReference makeAllInactive() {
         for(npsp__Trigger_Handler__c handler : tdtmConfig) {
             handler.npsp__Active__c = false;
         }
